@@ -1,7 +1,7 @@
 from random import randrange
-sang = 1
-kaghaz = 2
-ghychi = 3
+#sang = 1
+#kaghaz = 2
+#ghychi = 3
 
 winner = "You Won!"
 loser = "you lose!"
