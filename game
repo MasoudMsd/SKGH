@@ -1,0 +1,40 @@
+from random import randrange
+sang = 1
+kaghaz = 2
+ghychi = 3
+
+winner = "You Won!"
+loser = "you lose!"
+
+
+
+while True:
+    myChoice = int(input("choose one: "))
+    computerChoise = (randrange(1,4))
+    if myChoice == 4:
+        print("game is Over")
+        break
+    elif myChoice == computerChoise:
+        print("equal")
+    elif myChoice == 1:
+        if computerChoise== 2 :
+            print("You choose Sang and Computer Chose Kaghaz")
+            print(loser)
+        elif computerChoise == 3:
+            print("You choose Sang and Computer Chose Gheychi")
+            print(winner)
+    elif myChoice == 2:
+        if computerChoise== 1 :
+            print("You choose Kaghaz and Computer Chose Sang")
+            print(winner)
+        elif computerChoise == 3:
+            print("You choose Kaghaz and Computer Chose Gheychi")
+            print(loser)
+    elif myChoice == 3:
+        if computerChoise== 1 :
+            print("You choose Gheychi and Computer Chose Sang")
+            print(loser)
+        elif computerChoise == 2:
+            print("You choose Gheychi and Computer Chose kaghaz")
+            print(winner)
+
